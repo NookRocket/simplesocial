@@ -1,0 +1,33 @@
+<div class="post">
+    <h3>{{post.message_html|safe}}</h3>
+    <div class="d-flex flex-column">
+    {% comment %} <div class="media-body"> {% endcomment %}
+        <!-- <strong>{{post.user.username}}</strong> -->
+        <h5 class="flex-grow-1">
+            <span>
+                <a class="text-decoration-none" href="{% url 'posts:for_user' username=post.user.username %}">
+                    @{{post.user.username}}</a>
+            </span>
+            <small class="text-muted">
+                <a class="text-decoration-none" href="{% url 'posts:single' username=post.user.username pk=post.pk %}">
+                    {{post.created_at}}
+                </a>
+                {% if active_app == 'posts' %}
+                    {% if post.group.slug %}
+                    <a class="text-decoration-none" href="{% url 'groups:single' slug=post.group.slug %}">
+                        <em>--{{post.group.name}}</em>
+                    </a>    
+                    {% endif %}
+                {% endif %}
+            </small>
+        </h5>
+        <div>
+            {% if user.is_authenticated and post.user == user and not hide_delete %}
+                <a href="{% url 'posts:delete' pk=post.pk %}" title="delete" class="btn btn-simple">
+                    <i class="bi bi-x-lg text-danger" aria-hidden='true'></i>
+                    <span class="text-danger icon-label">Delete</span>
+                </a>
+            {% endif %}
+        </div>
+    </div>
+</div>

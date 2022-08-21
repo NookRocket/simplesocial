@@ -1,0 +1,11 @@
+html,
+body{
+    margin: 0;
+    overflow: hidden;
+    background-color: black;
+    color: white;
+}
+.navbar a, li{
+    color: rgb(42, 205, 255);
+    font-size:larger;
+}
