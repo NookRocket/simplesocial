@@ -15,8 +15,6 @@ from pathlib import Path
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 TEMPLATE_DIR = os.path.join(BASE_DIR, 'templates')
-# TEMPLATETAGS_DIR = os.path.join(BASE_DIR, 'templatetags')
-
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
@@ -44,8 +42,6 @@ INSTALLED_APPS.append('bootstrap5')
 INSTALLED_APPS.append('accounts')
 INSTALLED_APPS.append('groups')
 INSTALLED_APPS.append('posts')
-# INSTALLED_APPS.append('groups.templatetags.groups_user')
-
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -129,7 +125,6 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 STATICFILES_DIRS = [BASE_DIR / 'static',
-                # BASE_DIR / 'static/simplesocial',
                 ]
 
 # Default primary key field type
