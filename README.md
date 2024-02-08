@@ -7,5 +7,5 @@ Django 4.0.3
 Bootstrap 5
 Python 3.9
 
-My LinkedIn
-https://www.linkedin.com/in/jutamas-pramote-36625a62/
+see in video here
+https://www.linkedin.com/posts/jutamas-pramote-36625a62_ive-completed-a-basic-django-webapp-course-activity-6967163637199233024-vrwQ?
