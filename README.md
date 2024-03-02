@@ -1,5 +1,5 @@
 # simplesocial
-Some Django Project from Udemy
+Django Project
 I've upgrade version that was use in the class follow below:
 
 PostgreSQL 14.1
@@ -8,4 +8,4 @@ Bootstrap 5
 Python 3.9
 
 see in video here
-https://www.linkedin.com/posts/jutamas-pramote-36625a62_ive-completed-a-basic-django-webapp-course-activity-6967163637199233024-vrwQ?
+https://www.linkedin.com/posts/jutamas-pramote-36625a62_ive-completed-a-basic-django-webapp-course-activity-6967163637199233024-vrwQ
